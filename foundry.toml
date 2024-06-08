@@ -4,4 +4,13 @@ out = "out"
 libs = ["lib"]
 
 remappings = ["@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/", "@chainlink/contracts-ccip/=lib/ccip/contracts/"]
+
+# solc = '0.8.19'
+
+# [profile.rpc_endpoint]
+# ethereumSepolia = "${ETHEREUM_SEPOLIA_RPC_URL}"
+# avalancheFuji = "${AVALANCHE_FUJI_RPC_URL}"
+# modeSepolia = "${MODE_SEPOLIA_RPC_URL}"
+
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
