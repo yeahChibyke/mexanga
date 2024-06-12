@@ -10,8 +10,8 @@ import {IERC20} from "@chainlink/contracts-ccip/src/v0.8/vendor/openzeppelin-sol
 
 contract DeployMexangaReceiver is Script, Helper {
     function run(SupportedNetworks destination) external {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        vm.startBroadcast(deployerPrivateKey);
+        // uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast();
 
         (address router, , , ) = getConfigFromNetwork(destination);
 
@@ -37,8 +37,8 @@ contract CCIPTokenTransfer is Script, Helper {
         uint256 amount,
         PayFeesIn payFeesIn
     ) external returns (bytes32 messageId) {
-        uint256 senderPrivateKey = vm.envUint("PRIVATE_KEY");
-        vm.startBroadcast(senderPrivateKey);
+        // uint256 senderPrivateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast();
 
         (address sourceRouter, address linkToken, , ) = getConfigFromNetwork(
             source

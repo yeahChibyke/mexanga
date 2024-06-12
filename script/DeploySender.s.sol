@@ -7,8 +7,8 @@ import {MexangaSender} from "../src/MexangaSender.sol";
 
 contract DeployMexangaSender is Script, Helper {
     function run(SupportedNetworks source) external {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        vm.startBroadcast(deployerPrivateKey);
+        // uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast();
 
         (address router, address link, , ) = getConfigFromNetwork(source);
 
@@ -33,8 +33,8 @@ contract SendMessage is Script, Helper {
         string memory message,
         MexangaSender.PayFeesIn payFeesIn
     ) external {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        vm.startBroadcast(deployerPrivateKey);
+        // uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast();
 
         (, , , uint64 destinationChainId) = getConfigFromNetwork(destination);
 
