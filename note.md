@@ -13,4 +13,11 @@
 
 # ETHEREUM_SEPOLIA_RPC_URL ::: https://eth-sepolia.g.alchemy.com/v2/kFWpPXX8Fjcm4dHGpOeJqGuLnd0wsG30
 
+# Sepolia Contract ::: 0x06AE7a235daAEB7daDFacA4bE39AAb800E1cB9a9
+# Sepolia Hash ::: 0x4183a4b6dd070483e37d71d101720c89dbc8b18453c9b746f364bd075184c10d
+
+forge script ./script/Example05.s.sol:SendMessage -vvv --broadcast --rpc-url avalancheFuji --sig "ru
+n(address,uint8,address,string,uint8)" -- <BASIC_MESSAGE_SENDER_ADDRESS> 0 <BASIC_MESSAGE_RECEIVER_ADDRESS> "Hello World"
+1
+
 
