@@ -4,14 +4,3 @@
 # Ethereum Sepolia Receiver Contract ::: 0xdbD3B4931bf28cD915FA9a4ee1Fff2A1aD4dc1b2 
 # Ethereum Sepolia Receiver Hash ::: 0x00514c2565b4b0b3384dba39ad089d673a3048d95a6fbed7dae55292c2b123f4 
 
----
-
-## Update .env file ::: 
-
-MODE_SEPOLIA_RPC_URL="https://sepolia.mode.network/"  
-ETHEREUM_SEPOLIA_RPC_URL="https://eth-sepolia.g.alchemy.com/v2/kFWpPXX8Fjcm4dHGpOeJqGuLnd0wsG30"   
-AVALANCHE_FUJI_RPC_URL="https://api.avax-test.network/ext/bc/C/rpc"  
-OPTIMISM_GOERLI_RPC_URL="https://sepolia.optimism.io"  
-ARBITRUM_SEPOLIA_RPC_URL="https://sepolia-rollup.arbitrum.io/rpc"  
-ETHEREUM_SEPOLIA_VERIFIER_KEY=N1YECCKRASG6DDCS785ZZKXXPUUZ7MRYPY  
-
